@@ -2,26 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
+
+After cloning the project run npm install and then run ng server -o which opens the app in the browser.
+By default todoapp page will be loaded as the first page. 
+#in todo list on click of add task it adds a task and we can save the content , after saving to edit we should click on edit button.
+Below are few scenarios considered:
+1)once completed checkbox is checked, the task is freezed means we cant edit or save it and background color changes to indicate its completed. If we try to edit/ save completed task appropriate error message is displayed.
+2)Once task is completed we cannot again click on the checkbox.
+
+
+#Array Manipulation
+On click of this in nav bar it routes to array manipulation component.
+In this we can add filename and owner dynamically to existing array from UI.
+once user clicks on group by users the grouped result is displayed below it.
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
