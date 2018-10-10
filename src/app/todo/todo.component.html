@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <br>
+  Click on add task button to create tasks!!
+  <button class="btn btn-primary" (click)="addTask()">Add Task</button>
+  <div class="alert alert-danger" *ngIf="errorMsg!=''">
+    <strong>{{errorMsg}}</strong>
+  </div>
+  <div class="row" *ngFor="let item of todoList;">
+    <div class="col-sm-6 ">
+      <textarea class="form-control rounded-0" [ngClass]="{'todo-custom-completed': item.completed, 'todo-custom' : !item.completed }"
+        id="{{item.id}}" rows="2" [disabled]="item.disabled" style="min-height: 0%">{{item.data}}</textarea>
+    </div>
+
+    <div class="col-sm-4 btn-custom" >
+      <button class="btn btn-success" style="margin-right: 10px;" (click)="save(item.id)">Save</button>
+      <button class="btn btn-info" style="margin-right: 10px;" (click)="edit(item.id)">Edit</button>&emsp;&emsp;&emsp;
+      <button class="btn btn-danger" (click)="delete(item.id)">Delete</button>
+
+      <span style="padding-left: 20px;">
+
+      <label>Completed</label> <input type="checkbox" [checked]="item.completed" (click)="completedTask(item.id)"
+          [disabled]="item.completed"></span>
+
+
+      </div>
+  
+
+  </div>
+</div>

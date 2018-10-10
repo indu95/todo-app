@@ -1,0 +1,18 @@
+.todo-custom{
+    background-color: rgba(248, 235, 44, 0.58);
+    min-height: 200px;
+    margin-top: 20px;
+    display: inline;
+}
+
+.todo-custom-completed{
+    background-color: rgba(189, 189, 183, 0.58);
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+.btn-custom{
+    
+    padding-top: 32px;
+    padding-left: 0px;
+}

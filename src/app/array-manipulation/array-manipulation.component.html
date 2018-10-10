@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <br>
+  Sample data is as below:
+  <br>
+  {{associativeArr | json}}
+  <br>
+
+  File Name:<input type="text" id="fileName"><br><br>
+  Owner : <input type="text" id="owner">
+  <br>
+  <br>
+  <div class="alert alert-danger" *ngIf="error!=''">
+      <strong>{{error}}</strong>
+    </div>
+  <button class="btn btn-primary" (click)="addData()">Add to file array</button>
+
+  <button style="margin-left: 50px;" class="btn btn-success" (click)="groupByOwner()">Group By Owners</button>
+  <br>
+  <br>
+  <div *ngIf="flag" style="background-color: rgb(205, 197, 236)"> 
+    After grouping the files based on owners the result is as below:
+    <div>
+
+      {{groupedArr | json}}
+    </div>
+  </div>
+</div>
